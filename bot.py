@@ -53,7 +53,7 @@ async def on_ready():
     """http://discordpy.readthedocs.io/en/rewrite/api.html#discord.on_ready"""
 
     print(f'\n\nLogged in as: {bot.user.name} - {bot.user.id}\nVersion: {discord.__version__}\n')
-    await bot.change_presence(activity = discord.Activity(type=discord.ActivityType.listening,name="To you", url=BOT_URL))
+    await bot.change_presence(activity = discord.Activity(type=discord.ActivityType.listening,name="you", url=BOT_URL))
 
 @bot.event
 async def on_member_join(member):
