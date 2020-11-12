@@ -38,6 +38,8 @@ class RNG(commands.Cog):
                 limit = 1000000
             if rolls < 1:
                 rolls = 1
+            if rolls > 25:
+                rolls = 25
             if limit < 1:
                 limit = 6
         except Exception:
